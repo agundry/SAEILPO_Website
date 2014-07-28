@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>SAE &middot; ILPO</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+  <meta charset="utf-8">
+  <title>SAE &middot; ILPO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Le styles -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-    <style>
-    #gold {
-      color: #ffd700;
-    }
+  <!-- Le styles -->
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+  <style>
+  #gold {
+    color: #ffd700;
+  }
     /* GLOBAL STYLES
     -------------------------------------------------- */
     /* Padding below the footer and lighter body text */
@@ -46,8 +46,8 @@
     .navbar .navbar-inner {
       border: 0;
       -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+      -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+      box-shadow: 0 2px 10px rgba(0,0,0,.25);
     }
 
     /* Downsize the brand/project name a bit */
@@ -86,6 +86,33 @@
       margin-left: auto;
     }
 
+    .polaroid {
+      text-align: center;
+    }
+
+    .polaroidTitle {
+      margin-top: -10px;
+      text-align: center;
+      font-weight: normal;
+      font-style: italic;
+    }
+
+    .modal-pic {
+      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #directory > div > a {
+      color: #333333;
+    }
+
+    #directory > a:hover,
+    #directory > a:focus {
+      color: #333333;
+      text-decoration: underline;
+    }
 
     /* MARKETING CONTENT
     -------------------------------------------------- */
@@ -189,21 +216,21 @@
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
-    <![endif]-->
+      <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <!-- Fav and touch icons -->
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
-  </head>
+      <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+      <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    </head>
 
-  <body>
+    <body>
 
 
-    <div class="row-fluid">
-      <div class="span10 offset1">
+      <div class="row-fluid">
+        <div class="span10 offset1">
     <!-- NAVBAR
     ================================================== -->
     <div class="navbar-wrapper">
@@ -250,34 +277,688 @@
     </div><!-- /.navbar-wrapper -->
   </div>
 </div>
-      <!-- Heading -->
-      <div id="topRow"class="row-fluid">
-        <div class="span3 offset2">
-          <h1>Meet the Guys</h1>
-        </div>
+<!-- Heading -->
+<div id="topRow"class="row-fluid">
+  <div class="span3 offset2">
+    <h1>Meet the Guys</h1>
+  </div>
+</div>
+
+<div id="directory" class="row-fluid">
+  <div class="span1 offset1">
+    <a data-toggle="modal" data-target="#DePintoModal">
+      <div><img class="img-polaroid" src="images/Brothers/DePinto_small.jpg"><h5 class="polaroid">Joey DePinto</h5><h6 class="polaroidTitle">Risk Manager</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#KrissModal">
+      <div><img class="img-polaroid" src="images/Brothers/Kriss_small.jpg"><h5 class="polaroid">Josh Kriss</h5><h6 class="polaroidTitle">Recruitment Chair</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#LairdModal">
+      <div><img class="img-polaroid" src="images/Brothers/Laird_small.jpg"><h5 class="polaroid">Ross Laird</h5><h6 class="polaroidTitle">Warden</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#WolfenzonModal">
+      <div><img class="img-polaroid" src="images/Brothers/Wolfenzon_small.jpg"><h5 class="polaroid">Noah Wolfenzon</h5><h6 class="polaroidTitle">Recorder</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#GundryModal">
+      <div><img class="img-polaroid" src="images/Brothers/Gundry_small.jpg"><h5 class="polaroid">Austin Gundry</h5><h6 class="polaroidTitle">President</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#ShepherdModal">
+      <div><img class="img-polaroid" src="images/Brothers/Shepherd_small.jpg"><h5 class="polaroid">Will Shepherd</h5><h6 class="polaroidTitle">Vice President</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#MulhernModal">
+      <div><img class="img-polaroid" src="images/Brothers/Mulhern_small.jpg"><h5 class="polaroid">Shane Mulhern</h5><h6 class="polaroidTitle">Treasurer</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#KimModal">
+      <div><img class="img-polaroid" src="images/Brothers/Kim_small.jpg"><h5 class="polaroid">Max Kim</h5><h6 class="polaroidTitle">Member Educator</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#LosiModal">
+      <div><img class="img-polaroid" src="images/Brothers/Losi_small.jpg"><h5 class="polaroid">Taylor Losi</h5><h6 class="polaroidTitle">Social Chair</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#KliegerModal">
+      <div><img class="img-polaroid" src="images/Brothers/Klieger_small.jpg"><h5 class="polaroid">Josh Klieger</h5><h6 class="polaroidTitle">House Manager</h6></div>
+    </a>
+  </div>
+</div>
+
+<div id="directory" class="row-fluid">
+  <div class="span1 offset1">
+    <a data-toggle="modal" data-target="#SmithModal">
+      <div><img class="img-polaroid" src="images/Brothers/Smith_small.jpg"><h5 class="polaroid">Alec Smith</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#KniseModal">
+      <div><img class="img-polaroid" src="images/Brothers/Knise_small.jpg"><h5 class="polaroid">Nick Knise</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#BrandisModal">
+      <div><img class="img-polaroid" src="images/Brothers/Brandis_small.jpg"><h5 class="polaroid">Nick Brandis</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#JonesModal">
+      <div><img class="img-polaroid" src="images/Brothers/Jones_small.jpg"><h5 class="polaroid">Reg Jones</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#SergeantModal">
+      <div><img class="img-polaroid" src="images/Brothers/Sergeant_small.jpg"><h5 class="polaroid">Nick Sergeant</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#BartellModal">
+      <div><img class="img-polaroid" src="images/Brothers/Bartell_small.jpg"><h5 class="polaroid">Nate Bartell</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#HoffmanModal">
+      <div><img class="img-polaroid" src="images/Brothers/Hoffman_small.jpg"><h5 class="polaroid">Dan Hoffman</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#PetroModal">
+      <div><img class="img-polaroid" src="images/Brothers/Petro_small.jpg"><h5 class="polaroid">Nick Petro</h5><h6 class="polaroidTitle">Chronicler</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#BurksModal">
+      <div><img class="img-polaroid" src="images/Brothers/Burks_small.jpg"><h5 class="polaroid">Tosten Burks</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#DoroModal">
+      <div><img class="img-polaroid" src="images/Brothers/Doro_small.jpg"><h5 class="polaroid">Anthony D'Oro</h5></div>
+    </a>
+  </div>
+</div>
+
+<div id="directory" class="row-fluid">
+  <div class="span1 offset1">
+    <a data-toggle="modal" data-target="#BroadyModal">
+      <div><img class="img-polaroid" src="images/Brothers/Broady_small.jpg"><h5 class="polaroid">Nick Broady</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#HoganModal">
+      <div><img class="img-polaroid" src="images/Brothers/Hogan_small.jpg"><h5 class="polaroid">Max Hogan</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#AdeshoyeModal">
+      <div><img class="img-polaroid" src="images/Brothers/Adeshoye_small.jpg"><h5 class="polaroid">Ade Adeshoye</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#BrewsterModal">
+      <div><img class="img-polaroid" src="images/Brothers/Brewster_small.jpg"><h5 class="polaroid">Chase Brewster</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#BeecherModal">
+      <div><img class="img-polaroid" src="images/Brothers/Beecher_small.jpg"><h5 class="polaroid">Pat Beecher</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#MordellModal">
+      <div><img class="img-polaroid" src="images/Brothers/Mordell_small.jpg"><h5 class="polaroid">Jack Mordell</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#BehrooziModal">
+      <div><img class="img-polaroid" src="images/Brothers/Behroozi_small.jpg"><h5 class="polaroid">Cory Behroozi</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#JacksonModal">
+      <div><img class="img-polaroid" src="images/Brothers/Jackson_small.jpg"><h5 class="polaroid">Reid Jackson</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#GierModal">
+      <div><img class="img-polaroid" src="images/Brothers/Gier_small.jpg"><h5 class="polaroid">Andres Gier</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#EastwoodModal">
+      <div><img class="img-polaroid" src="images/Brothers/Eastwood_small.jpg"><h5 class="polaroid">Sam Eastwood</h5></div>
+    </a>
+  </div>
+</div>
+
+<div id="directory" class="row-fluid">
+  <div class="span1 offset1">
+    <a data-toggle="modal" data-target="#YooModal">
+      <div><img class="img-polaroid" src="images/Brothers/Yoo_small.jpg"><h5 class="polaroid">Peter Yoo</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#GageModal">
+      <div><img class="img-polaroid" src="images/Brothers/Gage_small.jpg"><h5 class="polaroid">Brett Gage</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#LovegroveModal">
+      <div><img class="img-polaroid" src="images/Brothers/Lovegrove_small.jpg"><h5 class="polaroid">Jamie Lovegrove</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#CarpenterModal">
+      <div><img class="img-polaroid" src="images/Brothers/Carpenter_small.jpg"><h5 class="polaroid">Matt Carpenter</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#BrennanModal">
+      <div><img class="img-polaroid" src="images/Brothers/Brennan_small.jpg"><h5 class="polaroid">Danny Brennan</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#GuenzlModal">
+      <div><img class="img-polaroid" src="images/Brothers/Guenzl_small.jpg"><h5 class="polaroid">Michael Guenzl</h5><h6 class="polaroidTitle">Paddy Murphy Co-Chair</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#BartimerModal">
+      <div><img class="img-polaroid" src="images/Brothers/Bartimer_small.jpg"><h5 class="polaroid">Michael Bartimer</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#HumerickModal">
+      <div><img class="img-polaroid" src="images/Brothers/Humerick_small.jpg"><h5 class="polaroid">Jacob Humerick</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#RechnitzModal">
+      <div><img class="img-polaroid" src="images/Brothers/Rechnitz_small.jpg"><h5 class="polaroid">Trevor Rechnitz</h5><h6 class="polaroidTitle">Paddy Murphy Co-Chair</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#EricksonModal">
+      <div><img class="img-polaroid" src="images/Brothers/Erickson_small.jpg"><h5 class="polaroid">Dan Erickson</h5><h6 class="polaroidTitle">Mothers Day Co-Chair</h6></div>
+    </a>
+  </div>
+</div>
+
+<div id="directory" class="row-fluid">
+  <div class="span1 offset1">
+    <a data-toggle="modal" data-target="#KenneyModal">
+      <div><img class="img-polaroid" src="images/Brothers/Kenney_small.jpg"><h5 class="polaroid">Ryan Kenney</h5><h6 class="polaroidTitle">Chaplain</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#WesterModal">
+      <div><img class="img-polaroid" src="images/Brothers/Wester_small.jpg"><h5 class="polaroid">C Wester</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#FaycurryModal">
+      <div><img class="img-polaroid" src="images/Brothers/Faycurry_small.jpg"><h5 class="polaroid">Sam Faycurry</h5><h6 class="polaroidTitle">Correspondent</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#SoforoModal">
+      <div><img class="img-polaroid" src="images/Brothers/Soforo_small.jpg"><h5 class="polaroid">Niko Soforo</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#BesharModal">
+      <div><img class="img-polaroid" src="images/Brothers/Beshar_small.jpg"><h5 class="polaroid">Henry Beshar</h5><h6 class="polaroidTitle">Scholarship Chair</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#InderModal">
+      <div><img class="img-polaroid" src="images/Brothers/Inder_small.jpg"><h5 class="polaroid">Fergus Inder</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#EShalekModal">
+      <div><img class="img-polaroid" src="images/Brothers/EShalek_small.jpg"><h5 class="polaroid">Eric Shalek</h5><h6 class="polaroidTitle">Food Service Manager</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#StephensModal">
+      <div><img class="img-polaroid" src="images/Brothers/Stephens_small.jpg"><h5 class="polaroid">Tucker Stephens</h5><h6 class="polaroidTitle">Mothers Day Co-Chair</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#GlassModal">
+      <div><img class="img-polaroid" src="images/Brothers/Glass_small.jpg"><h5 class="polaroid">Austin Glass</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#PosaModal">
+      <div><img class="img-polaroid" src="images/Brothers/Posa_small.jpg"><h5 class="polaroid">Franco Posa</h5><h6 class="polaroidTitle">Project SCARE Chair</h6></div>
+    </a>
+  </div>
+</div>
+
+<div id="directory" class="row-fluid">
+  <div class="span1 offset1">
+    <a data-toggle="modal" data-target="#SachsModal">
+      <div><img class="img-polaroid" src="images/Brothers/Sachs_small.jpg"><h5 class="polaroid">Steven Sachs</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#LicataModal">
+      <div><img class="img-polaroid" src="images/Brothers/Licata_small.jpg"><h5 class="polaroid">Michael Licata</h5><h6 class="polaroidTitle">IT Chair</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#SShalekModal">
+      <div><img class="img-polaroid" src="images/Brothers/SShalek_small.jpg"><h5 class="polaroid">Scott Shalek</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#RandolphModal">
+      <div><img class="img-polaroid" src="images/Brothers/Randolph_small.jpg"><h5 class="polaroid">Junius Randolph</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#ChatzkyModal">
+      <div><img class="img-polaroid" src="images/Brothers/Chatzky_small.jpg"><h5 class="polaroid">Jake Chatzky</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#BerkowitzModal">
+      <div><img class="img-polaroid" src="images/Brothers/Berkowitz_small.jpg"><h5 class="polaroid">Howie Berkowitz</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#TylerModal">
+      <div><img class="img-polaroid" src="images/Brothers/Tyler_small.jpg"><h5 class="polaroid">Steven Tyler</h5><h6 class="polaroidTitle">Philanthropy Chair</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#ArgoshModal">
+      <div><img class="img-polaroid" src="images/Brothers/Argosh_small.jpg"><h5 class="polaroid">Mike Argosh</h5><h6 class="polaroidTitle">Brotherhood Chair</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#GrimmModal">
+      <div><img class="img-polaroid" src="images/Brothers/Grimm_small.jpg"><h5 class="polaroid">Karl Grimm</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#CaddenModal">
+      <div><img class="img-polaroid" src="images/Brothers/Cadden_small.jpg"><h5 class="polaroid">Ryan Cadden</h5><h6 class="polaroidTitle">Intramural Chair</h6></div>
+    </a>
+  </div>
+</div>
+
+<div id="directory" class="row-fluid">
+  <div class="span1 offset1">
+    <a data-toggle="modal" data-target="#BKimModal">
+      <div><img class="img-polaroid" src="images/Brothers/BKim_small.jpg"><h5 class="polaroid">Brad Kim</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#HugenerModal">
+      <div><img class="img-polaroid" src="images/Brothers/Hugener_small.jpg"><h5 class="polaroid">Joe Hugener</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#KatzModal">
+      <div><img class="img-polaroid" src="images/Brothers/Katz_small.jpg"><h5 class="polaroid">Andrew Katz</h5><h6 class="polaroidTitle">Membership Development</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#DavidModal">
+      <div><img class="img-polaroid" src="images/Brothers/David_small.jpg"><h5 class="polaroid">Alex David</h5><h6 class="polaroidTitle">Assistant Rush Chair</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#HoeftModal">
+      <div><img class="img-polaroid" src="images/Brothers/Hoeft_small.jpg"><h5 class="polaroid">CJ Hoeft</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#DuarteModal">
+      <div><img class="img-polaroid" src="images/Brothers/Duarte_small.jpg"><h5 class="polaroid">Nick Duarte</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#ChenModal">
+      <div><img class="img-polaroid" src="images/Brothers/Chen_small.jpg"><h5 class="polaroid">Zhi-yao Chen</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#AsherModal">
+      <div><img class="img-polaroid" src="images/Brothers/Asher_small.jpg"><h5 class="polaroid">Nathan Asher</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#BonebrakeModal">
+      <div><img class="img-polaroid" src="images/Brothers/Bonebrake_small.jpg"><h5 class="polaroid">Will Bonebrake</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#ZhengModal">
+      <div><img class="img-polaroid" src="images/Brothers/Zheng_small.jpg"><h5 class="polaroid">Lucas Zheng</h5></div>
+    </a>
+  </div>
+</div>
+
+<div id="directory" class="row-fluid">
+  <div class="span1 offset1">
+    <a data-toggle="modal" data-target="#ImberModal">
+      <div><img class="img-polaroid" src="images/Brothers/Imber_small.jpg"><h5 class="polaroid">Marty Imber</h5><h6 class="polaroidTitle">Environmental Chair</h6></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#MillerModal">
+      <div><img class="img-polaroid" src="images/Brothers/Miller_small.jpg"><h5 class="polaroid">Harris Miller</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#McCulloughModal">
+      <div><img class="img-polaroid" src="images/Brothers/McCullough_small.jpg"><h5 class="polaroid">Paul McCullough</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#HutchisonModal">
+      <div><img class="img-polaroid" src="images/Brothers/Hutchison_small.jpg"><h5 class="polaroid">David Hutchison</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#AstorModal">
+      <div><img class="img-polaroid" src="images/Brothers/Astor_small.jpg"><h5 class="polaroid">Alfie Astor</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#HealdModal">
+      <div><img class="img-polaroid" src="images/Brothers/Shepherd_small.jpg"><h5 class="polaroid">Max Heald</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#KumarModal">
+      <div><img class="img-polaroid" src="images/Brothers/Kumar_small.jpg"><h5 class="polaroid">Mihir Kumar</h5></div>
+    </a>
+  </div>
+  <div class="span1">
+    <a data-toggle="modal" data-target="#NisellModal">
+      <div><img class="img-polaroid" src="images/Brothers/Nisell_small.jpg"><h5 class="polaroid">August Nisell</h5></div>
+    </a>
+  </div>
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+  <p class="pull-right"><a href="#">Back to top</a></p>
+  <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+</footer>
+
+</div><!-- /.container -->
+
+<!-- MODALS -->
+
+<div class="modal fade" id="DePintoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Joey Depinto</h4>
+        <h5 class="modal-title" id="myModalLabel">Risk Manager</h5>
       </div>
-
-      <div id="directory" class="row-fluid">
-        <div class="span1 offset1"><img class="img-polaroid" data-src="holder.js/140x140"><h5>Austin Gundry</h5></div>
-        <div class="span1"><img class="img-polaroid" data-src="holder.js/140x140"></div>
-        <div class="span1"><img class="img-polaroid" data-src="holder.js/140x140"></div>
-        <div class="span1"><img class="img-polaroid" data-src="holder.js/140x140"></div>
-        <div class="span1"><img class="img-polaroid" data-src="holder.js/140x140"></div>
-        <div class="span1"><img class="img-polaroid" data-src="holder.js/140x140"></div>
-        <div class="span1"><img class="img-polaroid" data-src="holder.js/140x140"></div>
-        <div class="span1"><img class="img-polaroid" data-src="holder.js/140x140"></div>
-        <div class="span1"><img class="img-polaroid" data-src="holder.js/140x140"></div>
-        <div class="span1"><img class="img-polaroid" data-src="holder.js/140x140"></div>
+      <div class="modal-body">
+        <img class="modal-pic" src="images/Brothers/DePinto.jpg">
+        <h4 class="modal-title">Area of Study</h4>
+        <h6 class="modal-title">Economics</h6>
+        <h4 class="modal-title">Bench Press: 1 Rep Max</h4>
+        <h6 class="modal-title">More than you</h6>
+        <h4 class="modal-title">Occupation in past life</h4>
+        <h6 class="modal-title">Cowboy. With a big hat.</h6>
       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+<div class="modal fade" id="KrissModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Josh Kriss</h4>
+        <h5 class="modal-title" id="myModalLabel">Recruitment Chair</h5>
+      </div>
+      <div class="modal-body">
+        <img class="modal-pic" src="images/Brothers/Kriss.jpg">
+        <h4 class="modal-title">Extracurriculars</h4>
+        <h6 class="modal-title">Peer Health Exchange, Men's Club Soccer</h6>
+        <h4 class="modal-title">Days since last concussion</h4>
+        <h6 class="modal-title">67</h6>
+        <h4 class="modal-title">Favorite Song</h4>
+        <h6 class="modal-title">My Heart Will Go On - Celine Dion</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
+<div class="modal fade" id="LairdModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Ross Laird</h4>
+        <h5 class="modal-title" id="myModalLabel">Warden</h5>
+      </div>
+      <div class="modal-body">
+        <img class="modal-pic" src="images/Brothers/Laird.jpg">
+        <h4 class="modal-title">Hometown</h4>
+        <h6 class="modal-title">Nanaimo, BC</h6>
+        <h4 class="modal-title">Shower Song</h4>
+        <h6 class="modal-title">Do You Wanna Build A Snowman - Frozen</h6>
+        <h4 class="modal-title">Biggest Fear</h4>
+        <h6 class="modal-title">Ultimate Frisbee</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-    </div><!-- /.container -->
+<div class="modal fade" id="WolfenzonModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Noah Wolfenzon</h4>
+        <h5 class="modal-title" id="myModalLabel">Recorder</h5>
+      </div>
+      <div class="modal-body">
+        <img class="modal-pic" src="images/Brothers/Wolfenzon.jpg">
+        <h4 class="modal-title">Major</h4>
+        <h6 class="modal-title">Computer Science</h6>
+        <h4 class="modal-title">Favorite Pastime</h4>
+        <h6 class="modal-title">Running with a backpack on</h6>
+        <h4 class="modal-title">Official Running Shorts Rating</h4>
+        <h6 class="modal-title">Too much thigh</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="GundryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Austin Gundry</h4>
+        <h5 class="modal-title" id="myModalLabel">President</h5>
+      </div>
+      <div class="modal-body">
+        <img class="modal-pic" src="images/Brothers/Wolfenzon.jpg">
+        <h4 class="modal-title">Celebrity Crush</h4>
+        <h6 class="modal-title">Betty White</h6>
+        <h4 class="modal-title">Favorite Tanning Spot</h4>
+        <h6 class="modal-title">Sitting in a dark room. Under a blanket. SPF 50.</h6>
+        <h4 class="modal-title">Seasonal Allergies</h4>
+        <h6 class="modal-title">Mild</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ShepherdModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Will Shepherd</h4>
+        <h5 class="modal-title" id="myModalLabel">Vice President</h5>
+      </div>
+      <div class="modal-body">
+        <img class="modal-pic" src="images/Brothers/Laird.jpg">
+        <h4 class="modal-title">Hometown</h4>
+        <h6 class="modal-title">Los Angeles, CA</h6>
+        <h4 class="modal-title">Celebrity Look-alike</h4>
+        <h6 class="modal-title">Bigfoot</h6>
+        <h4 class="modal-title">Ping Pong rank in the house</h4>
+        <h6 class="modal-title">Third, maybe Fourth</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MulhernModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Shane Mulhern</h4>
+        <h5 class="modal-title" id="myModalLabel">Treasurer</h5>
+      </div>
+      <div class="modal-body">
+        <img class="modal-pic" src="images/Brothers/Mulhern.jpg">
+        <h4 class="modal-title">Favorite Sport</h4>
+        <h6 class="modal-title">Baseball</h6>
+        <h4 class="modal-title">Favorite Pastime</h4>
+        <h6 class="modal-title">Growing a mustache</h6>
+        <h4 class="modal-title">Deepest Darkest Secret</h4>
+        <h6 class="modal-title">Dressed up as a character from Mean Girls this spring</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="KimModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Max Kim</h4>
+        <h5 class="modal-title" id="myModalLabel">Member Educator</h5>
+      </div>
+      <div class="modal-body">
+        <img class="modal-pic" src="images/Brothers/Kim.jpg">
+        <h4 class="modal-title">Favorite Form of Exercise</h4>
+        <h6 class="modal-title">Sarcasm and witty banter</h6>
+        <h4 class="modal-title">Studying Abroad in</h4>
+        <h6 class="modal-title">Scottland</h6>
+        <h4 class="modal-title">Enjoys at least one serving a day of</h4>
+        <h6 class="modal-title">Lentils</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="LosiModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Taylor Losi</h4>
+        <h5 class="modal-title" id="myModalLabel">Social Chair</h5>
+      </div>
+      <div class="modal-body">
+        <img class="modal-pic" src="images/Brothers/Losi.jpg">
+        <h4 class="modal-title">Zodiac Sign</h4>
+        <h6 class="modal-title">Virgo</h6>
+        <h4 class="modal-title">Favorite form of business attire</h4>
+        <h6 class="modal-title">Hawaiian Shirt</h6>
+        <h4 class="modal-title">Fun Fact</h4>
+        <h6 class="modal-title">Was bar mitzfahed on a coach bus</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="KliegerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Josh Klieger</h4>
+        <h5 class="modal-title" id="myModalLabel">House Manager</h5>
+      </div>
+      <div class="modal-body">
+        <img class="modal-pic" src="images/Brothers/Klieger.jpg">
+        <h4 class="modal-title">AIM Screen Name</h4>
+        <h6 class="modal-title">hoopsplayer1113</h6>
+        <h4 class="modal-title">Once Travelled To</h4>
+        <h6 class="modal-title">Philadelphia</h6>
+        <h4 class="modal-title">Favorite Forecast</h4>
+        <h6 class="modal-title">Cloudy with a chance of Smiles</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -287,13 +968,13 @@
     <script src="bootstrap/js/jquery-1.11.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <script>
-      !function ($) {
-        $(function(){
+    !function ($) {
+      $(function(){
           // carousel demo
           $('#myCarousel').carousel()
         })
-      }(window.jQuery)
+    }(window.jQuery)
     </script>
     <script src="bootstrap/js/holder.js"></script>
   </body>
-</html>
+  </html>
