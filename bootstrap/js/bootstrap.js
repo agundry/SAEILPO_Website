@@ -847,6 +847,8 @@
         var that = this
           , e = $.Event('show')
 
+        $('.modal').css('z-index', 1050);  
+
         this.$element.trigger(e)
 
         if (this.isShown || e.isDefaultPrevented()) return
@@ -887,6 +889,8 @@
         var that = this
 
         e = $.Event('hide')
+
+        $('.modal').css('z-index',-10);
 
         this.$element.trigger(e)
 
