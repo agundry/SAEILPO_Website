@@ -8,6 +8,23 @@
  * Designed and built with all the love in the world by @mdo and @fat.
  */
 
+.jumbotron { padding: 20px 5px 20px 15px; 
+margin-bottom: 10px; 
+margin-top: 10px; 
+margin-left: 5px; 
+margin-right: 5px; 
+font-size: 18px; 
+font-weight: 200; 
+line-height: inherit; 
+outline-width: thin; 
+outline-style: solid; 
+border-radius: 6px; 
+outline-color: #eeeeee; 
+color: #fffffff; 
+-webkit-border-radius: 20px; 
+-moz-border-radius: 20px; 
+border-radius: 20px;}
+
 .clearfix {
   *zoom: 1;
 }

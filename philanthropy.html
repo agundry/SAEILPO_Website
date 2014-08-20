@@ -10,6 +10,8 @@
   <!-- Le styles -->
   <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap/css/odometer-theme-car.css">
+  <script src="bootstrap/js/odometer.js"></script>
   <style>
   #gold {
     color: #ffd700;
@@ -77,8 +79,23 @@
       float: right;
     }
 
+    #odometer {
+      width: 550px;
+      height: 200px;
+      line-height: 190px;
+      font-size: 120px;
+    }
+
+    #dollarsRaised {
+      text-align: center;
+    }
+
+    .odometer-digit {
+      color: #00FF00;
+    }
+
     #topHeader {
-      margin-top: 70px;
+      margin-top: 100px;
     }
 
     #valuesRow {
@@ -114,7 +131,12 @@
     }
 
     #topFeaturette {
+      margin-top: -40px;
       margin-bottom: -50px;
+    }
+
+    #specialCase {
+      margin-top: 10px;
     }
 
 
@@ -366,23 +388,20 @@
       </div> <!-- /.container -->
     </div><!-- /.navbar-wrapper -->
 
-
     <!-- Timeline -->
     <div class="container marketing">
       <div id="topHeader"class="row-fluid">
-        <div class="span3">
-          <h1>Philanthropy</h1>
+        <div class="offset3">
+          <div id="odometer" class="odometer">0</div>
+          <div id="dollarsRaised"><b>Dollars raised in 2013-2014 academic year<b></div>
         </div>
-      </div>
-      <div style="margin-bottom: -40px; color: green;">
-        <h2>Fundraising total for 2013-2014: $<span id="lines">0</span><h2>
       </div>
 
       <!-- Three columns of text below the carousel -->
       <!-- START THE FEATURETTES -->
 
       <div class="featurette" id="topFeaturette">
-        <img class="featurette-image pull-right" src="images/scareCollageSmall.jpg">
+        <img id="specialCase" class="featurette-image pull-right" src="images/scareCollageSmall.jpg">
         <h2 class="featurette-heading">Project ScArE<br /><span class="muted">Benefitting the UCSF Neuro-Oncology Fund</span></h2>
         <p class="lead">Every Halloween, our members pair up with the lovely ladies of Alpha Phi to host a three night haunted house for charity. This past year, the group rallied the funds for the UCSF neuro-oncology fund due to the fact that the mother of one of our members was treated there for the entire course of her illness. In the end, we raised nearly $3,200, more than doubling our totals in previous years. It was also...like...super scary.</p>
       </div>
@@ -391,16 +410,16 @@
 
       <div class="featurette" id="paddyFeaturette">
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe  width="400" height="300" class="embed-responsive-item" src="http://www.youtube.com/embed/gmyHLohxMeE"></iframe>
+            <iframe id="paddyVideo" width="400" height="300" class="embed-responsive-item" src="http://www.youtube.com/embed/gmyHLohxMeE"></iframe>
         </div>
-        <h2 class="featurette-heading">Paddy Murphy<span class="muted"> Competing for a cause</span></h2>
-        <p class="lead">Come spring time, we organize a week long competition among the sororities of Northwestern's Panhellenic Association. The events include a carnival, several athletic competitions, and even a variety show. Proceeds this past year went to Go 4 The Goal, an organization with the mission of improving the lives of children battling cancer.</p>
+        <h2 id="videoFeaturette" class="featurette-heading">Paddy Murphy<span class="muted"> Competing for a cause</span></h2>
+        <p id ="videoFeaturette" class="lead">Come spring time, we organize a week long competition among the sororities of Northwestern's Panhellenic Association. The events include a carnival, several athletic competitions, and even a variety show. Proceeds this past year went to Go 4 The Goal, an organization with the mission of improving the lives of children battling cancer.</p>
       </div>
 
       <hr class="featurette-divider">
 
       <div class="featurette" id="otherFeaturette">
-        <img class="featurette-image pull-right" src="images/parkSchool.jpg">
+        <img id="specialCase" class="featurette-image pull-right" src="images/parkSchool.jpg">
         <h2 class="featurette-heading">Park School<span class="muted"> Service partnership</span></h2>
         <p class="lead">The Staff of Park School believe in the commitment to educate all students regardless of their disability or socio-economic background. Attempting to help further their goal, we assembled several trips to the Park School this spring to assist in the daily activities and have fun with the students there.</p>
       </div>
@@ -445,14 +464,10 @@
     //document.getElementById('handle').onclick = function(){
     //  fadeIn.className = fadeIn.className ? '' : 'fade';
     //}
-    var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
-$('#lines').animateNumber(
-  {
-    number: 83000,
-    easing: 'easeInQuad',
-    numberStep: comma_separator_number_step
-  }
-);
+
+      setTimeout(function(){
+        odometer.innerHTML = 83000;
+      }, 500);
     </script>
     <script src="bootstrap/js/holder.js"></script>
   </body>
