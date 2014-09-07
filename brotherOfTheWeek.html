@@ -10,8 +10,6 @@
   <!-- Le styles -->
   <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-  <link rel="stylesheet" href="bootstrap/css/odometer-theme-car.css">
-  <script src="bootstrap/js/odometer.js"></script>
   <style>
   #gold {
     color: #ffd700;
@@ -79,23 +77,8 @@
       float: right;
     }
 
-    #odometer {
-      width: 550px;
-      height: 200px;
-      line-height: 190px;
-      font-size: 120px;
-    }
-
-    #dollarsRaised {
-      text-align: center;
-    }
-
-    .odometer-digit {
-      color: #00FF00;
-    }
-
     #topHeader {
-      margin-top: 100px;
+      margin-top: 70px;
     }
 
     #valuesRow {
@@ -131,12 +114,32 @@
     }
 
     #topFeaturette {
-      margin-top: -40px;
       margin-bottom: -50px;
     }
 
-    #specialCase {
-      margin-top: 10px;
+    #BrotherWeek {
+      background: #ce9d00;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .BOTW {
+      border-radius: 6px;
+      float: left;
+    }
+
+    #BOTWD {
+      float: right;
+      padding-top: 40px;
+      font-size: 20px;
+    }
+
+    #BrotherContent {
+      padding-bottom: 20px;
+    }
+
+    #BrotherTitle {
+      text-align: center;
     }
 
 
@@ -388,55 +391,29 @@
       </div> <!-- /.container -->
     </div><!-- /.navbar-wrapper -->
 
+
     <!-- Timeline -->
     <div class="container marketing">
       <div id="topHeader"class="row-fluid">
-        <div class="offset3">
-          <div id="odometer" class="odometer">0</div>
-          <div id="dollarsRaised"><b>Dollars raised in 2013-2014 academic year<b></div>
+        <div class="span6">
+          <h1>Brother Of The Week</h1>
         </div>
       </div>
 
-      <!-- Three columns of text below the carousel -->
-      <!-- START THE FEATURETTES -->
-
-      <div class="featurette" id="topFeaturette">
-        <img id="specialCase" class="featurette-image pull-right" src="images/scareCollageSmall.jpg">
-        <h2 class="featurette-heading">Project ScArE<br /><span class="muted">Benefitting the UCSF Neuro-Oncology Fund</span></h2>
-        <p class="lead">Every Halloween, our members pair up with the lovely ladies of Alpha Phi to host a three night haunted house for charity. This past year, the group rallied the funds for the UCSF neuro-oncology fund due to the fact that the mother of one of our members was treated there for the entire course of her illness. In the end, we raised nearly $3,200, more than doubling our totals in previous years. It was also...like...super scary.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette" id="paddyFeaturette">
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe id="paddyVideo" width="400" height="300" class="embed-responsive-item" src="http://www.youtube.com/embed/gmyHLohxMeE"></iframe>
+      <div class="row-fluid">
+        <div class="span10 offset1" id="BrotherWeek">
+        <h2 id="BrotherTitle"> Week of September 15th - Ross Laird</h2>
+        <div class="span8 offset2" id="BrotherContent">
+        <img class="BOTW" src="images/LairdBOTW.jpg">
+        <div id="BOTWD" class="span6">
+          <p>Today’s #MancrushMonday goes out to our Eminent Warden Ross Laird. Ross hails from Nanaimo, British Columbia, Canada and as such enjoys apologizing frequently and avoiding conflict at all costs. An Industrial Engineering Major, Ross is a two year member of our Executive board, as well as being on the Club Rugby team since he's such a big strong man. As seen above, Ross's patented "Look lovestruck from across the bar" face. It rarely works. <br> <br> #PA #OhCanada #FrozenIsAGreatMovieForAFirstDate
+          </p>
         </div>
-        <h2 id="videoFeaturette" class="featurette-heading">Paddy Murphy<span class="muted"> Competing for a cause</span></h2>
-        <p id ="videoFeaturette" class="lead">Come spring time, we organize a week long competition among the sororities of Northwestern's Panhellenic Association. The events include a carnival, several athletic competitions, and even a variety show. Proceeds this past year went to Go 4 The Goal, an organization with the mission of improving the lives of children battling cancer.</p>
+      </div>
+      </div>
       </div>
 
-      <hr class="featurette-divider">
-
-      <div class="featurette" id="otherFeaturette">
-        <img id="specialCase" class="featurette-image pull-right" src="images/parkSchool.jpg">
-        <h2 class="featurette-heading">Park School<span class="muted"> Service partnership</span></h2>
-        <p class="lead">The Staff of Park School believe in the commitment to educate all students regardless of their disability or socio-economic background. Attempting to help further their goal, we assembled several trips to the Park School this spring to assist in the daily activities and have fun with the students there.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette" id="danceFeaturette">
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="http://player.vimeo.com/video/96535445" width="500" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/96535445">NUDM 2015 Beneficiary Announcement</a> from <a href="http://vimeo.com/nudm">Northwestern Dance Marathon</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-        </div>
-        <h2 class="featurette-heading">Dance Marathon</h2>
-        <p class="lead">One of the more exciting events of the year, not only for our brothers but for the entire Northwestern Campus at large, Dance Marathon has been a rallying point for our chapter and our efforts are only growing. Raising over $72,000 in the past year, finally qualifying for the Large Team Category, and now having two brothers on the exec committee, we're excited to support the Starlight Foundation this year.</p>
-      </div>
-
-      <!-- /END THE FEATURETTES -->
-
-
+      <hr>
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
@@ -458,16 +435,6 @@
           $('#myCarousel').carousel()
         })
     }(window.jQuery)
-
-    var fadeIn = document.getElementById('fadeIn');
-
-    //document.getElementById('handle').onclick = function(){
-    //  fadeIn.className = fadeIn.className ? '' : 'fade';
-    //}
-
-      setTimeout(function(){
-        odometer.innerHTML = 83000;
-      }, 500);
     </script>
     <script src="bootstrap/js/holder.js"></script>
   </body>
